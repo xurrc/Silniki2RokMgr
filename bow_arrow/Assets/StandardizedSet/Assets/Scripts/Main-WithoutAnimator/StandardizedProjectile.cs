@@ -1,6 +1,7 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.Audio;
 [RequireComponent(typeof(Rigidbody)), RequireComponent(typeof(BoxCollider)),RequireComponent(typeof(AudioSource))]
 public class StandardizedProjectile : MonoBehaviour
 {
@@ -18,6 +19,15 @@ public class StandardizedProjectile : MonoBehaviour
     private float currentTime = 0;    
     private bool collisionHappened = false;
     #endregion
+
+    public AudioSource tarcza_sparkle1;
+
+    public void Playtarcza_sparkle1()
+    {
+        tarcza_sparkle1.Play ();
+    }
+
+
 
     #region Public Values
     // Public variables
@@ -146,6 +156,8 @@ public class StandardizedProjectile : MonoBehaviour
            
             case "Target_2":
 			Debug.Log("2 PUNKTY");
+            tarcza_sparkle1.Play ();
+
 			break;
 
             case "Target_4":
