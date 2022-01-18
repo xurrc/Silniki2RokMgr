@@ -108,6 +108,7 @@
 -define:ENABLE_LEGACY_INPUT_MANAGER
 -define:CSHARP_7_OR_LATER
 -define:CSHARP_7_3_OR_NEWER
+-r:"Assets/JMO Assets/Editor/JMOAssets_CartoonFXFreeWelcome.dll"
 -r:"C:/Program Files/Unity/Hub/Editor/2021.1.27f1/Editor/Data/Managed/UnityEditor.Graphs.dll"
 -r:"C:/Program Files/Unity/Hub/Editor/2021.1.27f1/Editor/Data/Managed/UnityEngine/UnityEditor.CoreModule.dll"
 -r:"C:/Program Files/Unity/Hub/Editor/2021.1.27f1/Editor/Data/Managed/UnityEngine/UnityEditor.DeviceSimulatorModule.dll"
@@ -345,6 +346,7 @@
 "Assets/Invector-3rdPersonController_LITE/Scripts/CharacterCreator/Script/Editor/vCreateBasicCharacterEditor.cs"
 "Assets/Invector-3rdPersonController_LITE/Scripts/CharacterCreator/Script/Editor/vHelperEditor.cs"
 "Assets/Invector-3rdPersonController_LITE/Scripts/Generic/Utils/Editor/vCommentEditor.cs"
+"Assets/JMO Assets/Cartoon FX Easy Editor/Editor/CFXEasyEditor.cs"
 "Assets/StandardizedSet/Assets/Editor/StandardizedBowEditor.cs"
 "Assets/StandardizedSet/Assets/Editor/StandardizedBowForHandBoolEditor.cs"
 "Assets/StandardizedSet/Assets/Editor/StandardizedBowForHandEditor.cs"

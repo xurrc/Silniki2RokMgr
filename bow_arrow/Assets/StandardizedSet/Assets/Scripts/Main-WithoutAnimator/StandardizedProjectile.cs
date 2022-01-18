@@ -20,12 +20,8 @@ public class StandardizedProjectile : MonoBehaviour
     private bool collisionHappened = false;
     #endregion
 
-    public AudioSource tarcza_sparkle1;
-
-    public void Playtarcza_sparkle1()
-    {
-        tarcza_sparkle1.Play ();
-    }
+  
+  
 
 
 
@@ -156,24 +152,37 @@ public class StandardizedProjectile : MonoBehaviour
            
             case "Target_2":
 			Debug.Log("2 PUNKTY");
-            tarcza_sparkle1.Play ();
+
+            Level1_score.instance.Add2Points();
 
 			break;
 
             case "Target_4":
 			Debug.Log("4 PUNKTY");
+
+            Level1_score.instance.Add4Points();
+
 			break;
 
             case "Target_6":
 			Debug.Log("6 PUNKTOW");
+
+            Level1_score.instance.Add6Points();
+
 			break;
 
 			case "Target_8":
 			Debug.Log("8 PUNKTOW");
+
+            Level1_score.instance.Add8Points();
+
 			break;
 
             case "Target_10":
 			Debug.Log("10 PUNKTOW");
+
+            Level1_score.instance.Add10Points();
+
 			break;
 		}
 
