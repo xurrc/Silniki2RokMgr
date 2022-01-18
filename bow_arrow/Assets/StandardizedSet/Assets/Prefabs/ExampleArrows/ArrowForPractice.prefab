@@ -114,8 +114,8 @@ BoxCollider:
   m_IsTrigger: 1
   m_Enabled: 1
   serializedVersion: 2
-  m_Size: {x: 0.018195711, y: 0.015922766, z: 0.91186976}
-  m_Center: {x: 0.00056980737, y: 0.001187054, z: 0.5102534}
+  m_Size: {x: 0.009312272, y: 0.008523643, z: 0.15316153}
+  m_Center: {x: -0.00027400255, y: 0.00079736114, z: 0.9164686}
 --- !u!82 &5468666498322530782
 AudioSource:
   m_ObjectHideFlags: 0
@@ -227,7 +227,6 @@ MonoBehaviour:
   rigid: {fileID: 5214890542760438051, guid: ec7eb2d05c44a71458feb6597c573458, type: 3}
   bowScript: {fileID: 5646583742453961361, guid: 69348f8e8e4992d4ebaf9e8c9fb68750, type: 3}
   quiver: {fileID: 0}
-  tarcza_sparkle1: {fileID: 0}
   timeLimitToDePool: 5
   effectOfVelocityOnParticleEmission: 0.5
   projectileHitParticleFlesh: {fileID: 1088171423, guid: fc6f7e0bb7905fd468af0326c2a0d6c4, type: 3}

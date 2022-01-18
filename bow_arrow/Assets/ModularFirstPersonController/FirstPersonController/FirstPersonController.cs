@@ -149,8 +149,16 @@ public class FirstPersonController : MonoBehaviour
         }
     }
 
+    public void CursorUnlock()
+    {
+        Cursor.lockState = CursorLockMode.None;
+    }
+
     void Start()
     {
+        
+
+
         if(lockCursor)
         {
             Cursor.lockState = CursorLockMode.Locked;

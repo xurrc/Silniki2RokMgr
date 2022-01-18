@@ -154,6 +154,7 @@ public class StandardizedProjectile : MonoBehaviour
 			Debug.Log("2 PUNKTY");
 
             Level1_score.instance.Add2Points();
+            
 
 			break;
 
@@ -161,6 +162,7 @@ public class StandardizedProjectile : MonoBehaviour
 			Debug.Log("4 PUNKTY");
 
             Level1_score.instance.Add4Points();
+           
 
 			break;
 
@@ -168,6 +170,7 @@ public class StandardizedProjectile : MonoBehaviour
 			Debug.Log("6 PUNKTOW");
 
             Level1_score.instance.Add6Points();
+          
 
 			break;
 
@@ -175,6 +178,7 @@ public class StandardizedProjectile : MonoBehaviour
 			Debug.Log("8 PUNKTOW");
 
             Level1_score.instance.Add8Points();
+            
 
 			break;
 
@@ -182,6 +186,7 @@ public class StandardizedProjectile : MonoBehaviour
 			Debug.Log("10 PUNKTOW");
 
             Level1_score.instance.Add10Points();
+           
 
 			break;
 		}

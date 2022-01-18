@@ -11,6 +11,7 @@ public class Level1_score : MonoBehaviour
     public Text scoreText;
 
     int score = 0;
+    int tarcze_quantity = 0;
 
     private void Awake() 
     {
@@ -26,39 +27,59 @@ public class Level1_score : MonoBehaviour
     {
         score += 2;
         scoreText.text = score.ToString() + " POINTS";
+        tarcze_quantity += 1;
     }
 
     public void Add4Points()
     {
         score += 4;
         scoreText.text = score.ToString() + " POINTS";
+        tarcze_quantity += 1;
     }
 
     public void Add6Points()
     {
         score += 6;
         scoreText.text = score.ToString() + " POINTS";
+        tarcze_quantity += 1;
     }
 
     public void Add8Points()
     {
         score += 8;
         scoreText.text = score.ToString() + " POINTS";
+        tarcze_quantity += 1;
     }
        
     public void Add10Points()
     {
         score += 10;
         scoreText.text = score.ToString() + " POINTS";
+        tarcze_quantity += 1;
     }
 
     void Update()
     {
-        if (score >= 60)
-       {
+
+        if (tarcze_quantity >= 10)
+        {
+            if (score >= 60)
+            {
+
+            FindObjectOfType<FirstPersonController>().CursorUnlock();
             SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex + 1);
             score = 0;
+            tarcze_quantity = 0;
             scoreText.text = score.ToString() + " POINTS";
-       }
+            }
+
+            else
+            {
+             
+             tarcze_quantity -= 1;
+             FindObjectOfType<GameManager>().EndGame();
+
+            }
+        }
     }
 }
